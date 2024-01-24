@@ -16,4 +16,5 @@ test('Array', () => {
     const animal = ['dog', 'cat', 'bird']
 
     expect(animal).toContain('cat')
+    expect(animal).toBeInstanceOf(Array)
 })
