@@ -1,4 +1,4 @@
-test('addition', () => {
+test('Addition', () => {
     expect(2 + 2).toBe(4)
 })
 
@@ -10,4 +10,10 @@ test('NULL', () => {
 
     expect(i).toBeNull()
     expect(i).toBeDefined()
+})
+
+test('Array', () => {
+    const animal = ['dog', 'cat', 'bird']
+
+    expect(animal).toContain('cat')
 })
