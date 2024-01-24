@@ -19,6 +19,14 @@ test('Array', () => {
     expect(animal).toBeInstanceOf(Array)
 })
 
+test('Object', () => {
+    const obj = {
+        name: 'John',
+    }
+    expect(obj).toEqual({ name: 'John' })
+    expect(obj).toHaveProperty('name')
+})
+
 function ThrowErr() {
     throw new Error('Error')
 }
