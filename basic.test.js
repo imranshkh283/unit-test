@@ -18,3 +18,11 @@ test('Array', () => {
     expect(animal).toContain('cat')
     expect(animal).toBeInstanceOf(Array)
 })
+
+function ThrowErr() {
+    throw new Error('Error')
+}
+
+test('Throw Err', () => {
+    expect(() => ThrowErr()).toThrow()
+})
