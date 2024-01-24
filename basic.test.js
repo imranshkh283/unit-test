@@ -1,5 +1,10 @@
 test('Addition', () => {
-    expect(2 + 2).toBe(4)
+    const value = 2 + 2;
+    expect(value).toBeGreaterThan(3)
+    expect(value).toBeGreaterThanOrEqual(4)
+
+    expect(value).toBe(4)
+    expect(value).toEqual(4)
 })
 
 test('NULL', () => {
@@ -25,6 +30,7 @@ test('Object', () => {
     }
     expect(obj).toEqual({ name: 'John' })
     expect(obj).toHaveProperty('name')
+    expect(obj).toHaveProperty('name', 'John')
 })
 
 function ThrowErr() {
